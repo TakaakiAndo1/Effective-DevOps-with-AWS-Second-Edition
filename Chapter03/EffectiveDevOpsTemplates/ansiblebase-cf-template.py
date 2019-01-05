@@ -16,7 +16,7 @@ from troposphere import (
 
 ApplicationName = "helloworld"
 ApplicationPort = "3000"
-GithubAccount = "EffectiveDevOpsWithAWS"
+GithubAccount = "TakaakiAndo1"
 GithubAnsibleURL = "https://github.com/{}/ansible".format(GithubAccount)
 
 PublicCidrIp = str(ip_network(get_ip()))
@@ -66,7 +66,7 @@ AnsiblePullCmd,
 
 t.add_resource(ec2.Instance(
     "instance",
-    ImageId="ami-cfe4b2b0",
+    ImageId="ami-00a5245b4816c38e6",
     InstanceType="t2.micro",
     SecurityGroups=[Ref("SecurityGroup")],
     KeyName=Ref("KeyPair"),
